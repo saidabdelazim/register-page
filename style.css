@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f1f4f9,#dff1ff);
+}
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+section .color:nth-child(1){
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: #ff359b;
+}
+section .color:nth-child(2){
+    bottom: -150px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background: #fffd87;
+}
+section .color:nth-child(3){
+    bottom: 50px;
+    right: 100px;
+    width: 600px;
+    height: 400px;
+    background: #13ace9;
+}
+.box{
+    position: relative;
+}
+.box .cycle{
+    position: absolute;
+    backdrop-filter: (5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgb(255, 255, 255, 0.1);
+}
+.box .cycle:nth-child(1){
+ 
+    right: -119px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(73, 0, 51, 0.3);
+    border-top: 3px solid rgba(255,255,255,0.5);
+    border-top: 3px solid transparent;
+    border-top: 3px solid rgba(255,255,255,0.5);
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    animation: linear 10s infinite;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+    
+
+.box .cycle:nth-child(2){
+    top: 150px;
+    left: -65px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(73, 0, 51, 0.3);
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
+    animation: linear 10s infinite;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+.box .cycle:nth-child(3){
+    bottom: -90px;
+    right: -143px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(73, 0, 51, 0.3);
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
+    animation: linear 10s infinite;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+ 
+}
+
+
+.container{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgb(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: (5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+.form h2{
+    position: relative;
+    color: seashell;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 40px;
+    
+}
+.form h2::after{
+    content: '';
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 50%;
+    background-color: seashell;
+    position: absolute;
+}
+
+.form .inputbox{
+    width: 100%;
+    margin-top: 20px;
+}
+.form .inputbox input{
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    color: seashell;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    letter-spacing: 1px;
+
+}
+.form .inputbox input::placeholder{
+    color: seashell;
+}
+.form .inputbox input[type="submit"]{
+    color: #666;;
+    background-color: seashell;
+    max-width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+
+}
+.forget{
+    color: seashell;
+   margin-top: 5px;
+
+   
+}
+.forget a{
+    text-decoration: none;
+    font-weight: 600;
+    
+}
